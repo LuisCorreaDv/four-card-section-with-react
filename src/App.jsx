@@ -37,7 +37,7 @@ function App() {
       imgLink: "/images/icon-calculator.svg",
     },
   ];
-  
+
   return (
     <>
       <main>
@@ -52,7 +52,17 @@ function App() {
           </div>
         </section>
         <section className="cards-feature">
-          <Card />
+          {
+            cards.map((card, index) => (
+              <Card
+                key={index}
+                color={card.color}
+                title={card.title}
+                text={card.text}
+                src={card.imgLink}
+              />
+            ))
+          }
         </section>
       </main>
     </>
