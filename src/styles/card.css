@@ -1,5 +1,6 @@
 /* Card container general */
 .card-container {
+  max-width: 350px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: white;

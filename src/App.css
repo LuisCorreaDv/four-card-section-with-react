@@ -1,4 +1,3 @@
-
 .main-section {
   padding: 2.5rem 1.5rem;
   text-align: center;
@@ -26,9 +25,33 @@
 }
 
 .cards-feature {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  padding: 0 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .cards-feature {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-col.left,
+  .card-col.right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-col.center {
+    justify-content: center;
+  }
 }
