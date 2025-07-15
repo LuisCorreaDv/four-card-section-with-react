@@ -32,6 +32,25 @@
 }
 
 @media (min-width: 1024px) {
+  .main-section {
+    padding: 3rem 2rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    padding-top: 12px;
+  }
+
   .cards-feature {
     flex-direction: row;
     justify-content: center;
